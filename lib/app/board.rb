@@ -1,5 +1,4 @@
 class Board
-
   attr_accessor :cases
 
   def initialize
@@ -10,7 +9,7 @@ class Board
   end
 
   def display_board
-    puts "|-----|-----|"
+    pp @cases
   end
 
   def is_board_full
@@ -23,6 +22,10 @@ class Board
     end
     return true
   end
+
+  #def is_victorious(symbol)
+   
+  #end
 
   def check_case_available(option)
     matrix_index = @case_index[option.to_sym]
